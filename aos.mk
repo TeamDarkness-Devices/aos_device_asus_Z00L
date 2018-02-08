@@ -1,9 +1,12 @@
 $(call inherit-product, device/asus/Z00L/full_Z00L.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Atomic-OS stuff.
+$(call inherit-product, vendor/aos/config/common.mk)
 
-PRODUCT_NAME := lineage_Z00L
+# MusicFX
+WITH_MUSICFX=true
+
+PRODUCT_NAME := aos_Z00L
 PRODUCT_BRAND := asus
 PRODUCT_MANUFACTURER := asus
 PRODUCT_DEVICE := Z00L
